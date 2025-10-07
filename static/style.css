@@ -1,0 +1,59 @@
+ body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    nav.navbar {
+      background-color: #212529 !important;
+    }
+
+    .navbar-brand {
+      font-weight: 600;
+      color: #fff !important;
+      font-size: 1.4rem;
+    }
+
+    .main-section {
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    .form-container {
+      background-color: #fff;
+      padding: 40px 50px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      width: 100%;
+      text-align: center;
+    }
+.form-container h2 {
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    button.btn-primary {
+      background-color: #ff7f50;
+      border: none;
+      transition: 0.3s ease;
+    }
+
+    button.btn-primary:hover {
+      background-color: #ff5722;
+      transform: translateY(-2px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px 0;
+      background-color: #212529;
+      color: white;
+      font-size: 0.9rem;
+    }
