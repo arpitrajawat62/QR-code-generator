@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}Download QR Code{% endblock %}
+
+{% block content %}
+<div class="container text-center mt-5">
+    <h2 class="mb-4">{{ res_name }}</h2>
+    
+    <img src="{{ qr_url }}" 
+         alt="QR Code" 
+         class="img-fluid mb-4" 
+         style="max-width: 300px;">
+
+    <p class="text-muted">Thank you for using our QR code generating tool</p>
+
+    <div>
+        <a href="{{ qr_image }}" 
+           download="{{ res_name|default:'menu_qr' }}.png" 
+           class="btn btn-success me-2">Download QR Code</a>
+
+        <a href="{% url 'generate_qr_code' %}" class="btn btn-secondary">Generate Another</a>
+    </div>
+</div>
+{% endblock %}
